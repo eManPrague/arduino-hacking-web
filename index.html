@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+  <title>Arduino colorizer</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+	<script src="js/jquery-3.0.0.min.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<div class="form">
+    <!--
+    90 bytes is the maximum message length Arduino can handle by default
+    https://github.com/knolleary/pubsubclient
+    -->
+		<input id="message" class="message" maxlength="90" disabled />
+	</div>
+	<div class="colors">
+		<button class="red" data-color="R" />
+		<button class="green" data-color="G" />
+		<button class="blue" data-color="B" />
+		<button class="yellow" data-color="Y" />
+		<button class="silver" data-color="_">SPACE</button>
+		<button class="black" id="send">SEND</button>
+	</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
